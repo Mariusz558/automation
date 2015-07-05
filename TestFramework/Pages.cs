@@ -61,6 +61,16 @@ namespace TestFramework
             }
         }
 
+        public static PlaygroundPage PlaygroundPage 
+        {
+            get 
+            {
+                var playgroundPage = new PlaygroundPage();
+                PageFactory.InitElements(Browser.Driver, playgroundPage);
+                return playgroundPage;
+            }
+        }
+
     }
 
 }

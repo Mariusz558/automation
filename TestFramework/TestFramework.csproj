@@ -52,6 +52,7 @@
     <Compile Include="FitnessAndGymPage.cs" />
     <Compile Include="HomePage.cs" />
     <Compile Include="Pages.cs" />
+    <Compile Include="PlaygroundPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpaPage.cs" />
     <Compile Include="TennisAndSquashPage.cs" />

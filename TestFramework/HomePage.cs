@@ -25,6 +25,9 @@ namespace TestFramework
         [FindsBy(How = How.LinkText, Using = "STREFA BODY SPACE")]
         private IWebElement bodySpaceLink;
 
+        [FindsBy(How = How.LinkText, Using = "BAWILANDIA")]
+        private IWebElement playgroundLink;
+
         public void GoTo()
         {
             Browser.GoTo(Url);
@@ -53,6 +56,11 @@ namespace TestFramework
         public void SelectBodySpace()
         {
             bodySpaceLink.Click();
+        }
+
+        public void SelectPlayground()
+        {
+            playgroundLink.Click();
         }
     }
 }
