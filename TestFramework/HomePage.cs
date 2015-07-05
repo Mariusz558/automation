@@ -11,11 +11,19 @@ namespace TestFramework
     public class HomePage
     {
         static string Url = "http://centrumformy.com";
-        private static string PageTitle = "Centrum Formy - Dąbrowa Górnicza |";
-        //private static string TennisPageTitle = "Centrum Formy - Dąbrowa Górnicza |TENIS  I SQUASH";
+        private static string PageTitle = "Centrum Formy - Dąbrowa Górnicza |";        
 
         [FindsBy(How = How.LinkText, Using = "TENIS I SQUASH")]
-        private IWebElement tennisAndSquashLink; 
+        private IWebElement tennisAndSquashLink;
+
+        [FindsBy(How = How.LinkText, Using = "FITNESS I SIŁOWNIA")]
+        private IWebElement fitnessAndGymLink;
+
+        [FindsBy(How = How.LinkText, Using = "STREFA SPA")]
+        private IWebElement spaLink;
+
+        [FindsBy(How = How.LinkText, Using = "STREFA BODY SPACE")]
+        private IWebElement bodySpaceLink;
 
         public void GoTo()
         {
@@ -27,22 +35,24 @@ namespace TestFramework
             return Browser.Title == PageTitle;
         }
 
+        public void SelectFitnessAndGym()
+        {
+            fitnessAndGymLink.Click();
+        }
 
         public void SelectTennisAndSquash()
         {
-            
-           //var tennisAndSquashLink = Browser.Driver.FindElement(By.Id("menu-item-179"));
            tennisAndSquashLink.Click();
         }
 
-        /*public bool IsAtTennisAndSquash()
+        public void SelectSpa()
         {
-            return Browser.Title == TennisPageTitle;
-        }*/
+            spaLink.Click();
+        }
 
-        /*public void SelectMenuItem()
+        public void SelectBodySpace()
         {
-            throw new NotImplementedException();
-        }*/
+            bodySpaceLink.Click();
+        }
     }
 }

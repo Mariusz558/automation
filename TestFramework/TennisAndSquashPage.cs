@@ -8,7 +8,7 @@ namespace TestFramework
 {
     public class TennisAndSquashPage
     {
-        static string Url = "http://centrumformy.com/tenis-i-squash/";
+        //static string Url = "http://centrumformy.com/tenis-i-squash/";
         private static string TennisPageUrl = "http://centrumformy.com/tenis-i-squash/";
 
         public bool IsAtTennisAndSquash()

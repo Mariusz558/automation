@@ -21,6 +21,16 @@ namespace TestFramework
             }
         }
 
+        public static FitnessAndGymPage FitnessAndGymPage
+        {
+            get
+            {
+                var fitnessAndGymPage = new FitnessAndGymPage();
+                PageFactory.InitElements(Browser.Driver, fitnessAndGymPage);
+                return fitnessAndGymPage;
+            }
+        }
+
         public static TennisAndSquashPage TennisAndSquashPage 
         {
             get 
@@ -30,7 +40,27 @@ namespace TestFramework
                 return tennisAndSquashPage;
             }
         }
- 
+
+        public static SpaPage SpaPage 
+        {
+            get 
+            {
+                var spaPage = new SpaPage();
+                PageFactory.InitElements(Browser.Driver, spaPage);
+                return spaPage;
+            }
+        }
+
+        public static BodySpacePage BodySpacePage 
+        {
+            get 
+            {
+                var bodySpacePage = new BodySpacePage();
+                PageFactory.InitElements(Browser.Driver, bodySpacePage);
+                return bodySpacePage;
+            }
+        }
+
     }
 
 }
